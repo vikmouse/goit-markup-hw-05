@@ -169,7 +169,7 @@ body {
 
 .header-link {
     position: relative;
-    transition: 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 
     padding-top: 32px;
@@ -191,7 +191,7 @@ body {
 
 .header-link.active::after {
     position: absolute;
-    transition: 250ms;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     bottom: 0;
     left: 0;
     display: block;
@@ -221,7 +221,7 @@ body {
 }
 
 .link-contact {
-    transition: 250ms;
+    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -500,7 +500,7 @@ body {
 }
 
 .social-link {
-    transition: 250ms;
+    transition:  color,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display:flex;
     justify-content: center;
     
@@ -521,7 +521,7 @@ body {
 .social-link:hover,
 .social-link:focus {
     color: var(--third-text-color);
-background-color: var(--client-second-color);
+    background-color: var(--client-second-color);
 }
 
 
@@ -543,7 +543,7 @@ background-color: var(--client-second-color);
 { margin-right: 8px; }
 
 .button {
-    transition: 250ms;
+    transition:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 6px 22px;
     border-radius: 4px;
     
@@ -670,7 +670,7 @@ background-color: var(--client-second-color);
 }
 
 .client-item {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     
     align-items: center;
@@ -686,7 +686,7 @@ background-color: var(--client-second-color);
 }
 
 .client-logo {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 16px 32px;
     color:var(--client-first-color) ;
     width: 170px;
@@ -741,7 +741,7 @@ background-color: var(--client-second-color);
 }
 
 .link-point {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     
     font-style: normal;   
     font-size: 14px;
@@ -755,7 +755,7 @@ background-color: var(--client-second-color);
 { color:var(--accent-color) }
 
 .footer-contact {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     
     font-style: normal;  
     font-size: 14px;
@@ -789,7 +789,7 @@ background-color: var(--client-second-color);
 }
 
 .social-footer-link {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display:flex;
     justify-content: center;
     width: 44px;
@@ -809,9 +809,11 @@ background-color: var(--client-second-color);
     fill:currentColor
 }
 .backdrop {
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    
 
     width: 100%;
     height: 100%;
@@ -830,7 +832,7 @@ background-color: var(--client-second-color);
     left: 50%;
     transform:translate(-50%,-50%);
 
-    min-inline-size: 528px;
+    width: 528px;
     min-height: 581px;
     
     background-color: #fff;
@@ -839,25 +841,21 @@ background-color: var(--client-second-color);
 
 }
 
-.button-close {
-    padding: 0;
-    background-color: #ffffff;
-    
-}
-
-.modal-icon {
+.modal-close {
     position: absolute;
     top: 8px;
-    left: 490px;
-    fill:#ffffff ;
+    right: 8px;
     
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
     width: 30px;
     height: 30px;
-    
-    
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
 
+
+.modal-close-icon {
+    margin-top: 4px;
 }
 
 
