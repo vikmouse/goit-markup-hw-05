@@ -219,8 +219,6 @@ body {
 
 .contact-icon {
     margin-right: 10px;
-    /* width: 16px;
-    height: 12px; */
     fill:currentColor;
 }
 
@@ -321,8 +319,8 @@ body {
 
 .features-icon {
     margin: 25px 100px;
-    width: 70px;
-    height: 70px;
+    /* width: 70px;
+    height: 70px; */
 
 }
 
@@ -483,8 +481,9 @@ body {
 
 .social-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     display:flex;
-    display:flex;
+    align-items: center;
     justify-content: center;
     
     width: 44px;
@@ -495,11 +494,7 @@ body {
 }
 
 
-.social-icon {
-    
-    width: 20px;
-    fill:currentColor
-}
+.social-icon { fill:currentColor }
 
 .social-link:hover,
 .social-link:focus {
@@ -699,11 +694,7 @@ body {
     
 }
 
-.clients-icon {
-    width: 106px;
-    height: 60px;
-    fill:currentColor
-}
+.clients-icon { fill:currentColor }
 
 .client-logo:hover,
 .client-logo:focus
@@ -793,6 +784,7 @@ body {
 .social-footer-link {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display:flex;
+    align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
@@ -805,11 +797,7 @@ body {
 .social-footer-link:focus
 { background-color:var(--accent-color) }
 
-.social-footer-icon {
-    width: 20px;
-    
-    fill:currentColor
-}
+.social-footer-icon { fill:currentColor }
 
 
 .backdrop {
